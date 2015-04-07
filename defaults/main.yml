@@ -1,5 +1,6 @@
 ---
 # defaults file for mysql_client
+aspects_mysql_client_enabled: False
 aspects_mysql_client_package_name:
   Debian: "mysql-client"
   RedHat: "mysql"
