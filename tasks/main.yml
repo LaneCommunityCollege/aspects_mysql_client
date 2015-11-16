@@ -1,7 +1,7 @@
 ---
 # file: roles/mysql-client/tasks/main.yml
 - name: install mysql-client with apt
-  when: aspects_mysql_client_enabled and ansible_os_family == "Debian"
+  when: aspects_mysql_client_enabled and (ansible_os_family == "Debian" or ansible_os_family == "Linuxmint")
   apt: 
     state: "present"
     pkg: "{{ aspects_mysql_client_package_name.Debian }}"
