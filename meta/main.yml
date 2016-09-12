@@ -4,18 +4,16 @@ galaxy_info:
   description: Ensure that the mysql command line client tools are installed. This does not install the server.
   company: Lane Community College
   license: MIT
-  min_ansible_version: 1.6
+  min_ansible_version: 1.9
   platforms:
   - name: CentOS
     versions:
-    - 6.5
+    - 7
   - name: Ubuntu
     versions:
-    - lucid
     - precise
-    - raring
-    - saucy
     - trusty
+    - xenial
   #- name: SLES
   #  versions:
   #  - all
@@ -60,4 +58,4 @@ dependencies: []
   # dependencies available via galaxy should be listed here.
   # Be sure to remove the '[]' above if you add dependencies
   # to this list.
-  
+

@@ -1,8 +1,9 @@
 ---
 # file: roles/mysql-client/tasks/main.yml
 - name: install mysql-client with apt
-  when: aspects_mysql_client_enabled and (ansible_os_family == "Debian" or ansible_os_family == "Linuxmint")
-  apt: 
+  when: aspects_mysql_client_enabled and
+        (ansible_os_family == "Debian" or ansible_os_family == "Linuxmint")
+  apt:
     state: "present"
     pkg: "{{ aspects_mysql_client_package_name.Debian }}"
   tags:
@@ -10,8 +11,8 @@
 
 - name: install mysql-client with yum
   when: aspects_mysql_client_enabled and ansible_os_family == "RedHat"
-  yum: 
-    state: "present" 
+  yum:
+    state: "present"
     pkg: "{{ aspects_mysql_client_package_name.RedHat }}"
   tags:
     - aspects_mysql_client
