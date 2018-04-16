@@ -1,3 +1,6 @@
+# ABANDONED
+It's simpler to just install manually or use a role that installs the various misc packages for you. I now use a custom common role for each stack of servers.
+
 aspects_mysql_client
 ========
 
